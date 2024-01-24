@@ -5,16 +5,68 @@
       "PackagePath": "staticwebassets\\PRTest.bundle.scp.css"
     },
     {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\Image\\bg-1.jpg",
+      "PackagePath": "staticwebassets\\Image\\bg-1.jpg"
+    },
+    {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\Image\\login.jpg",
+      "PackagePath": "staticwebassets\\Image\\login.jpg"
+    },
+    {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\Image\\otp.jpg",
+      "PackagePath": "staticwebassets\\Image\\otp.jpg"
+    },
+    {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\Image\\registration.jpg",
+      "PackagePath": "staticwebassets\\Image\\registration.jpg"
+    },
+    {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
       "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\css\\toastr.css",
+      "PackagePath": "staticwebassets\\css\\toastr.css"
     },
     {
       "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\js\\Authentication\\Authentication.js",
+      "PackagePath": "staticwebassets\\js\\Authentication\\Authentication.js"
+    },
+    {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\js\\popper.js",
+      "PackagePath": "staticwebassets\\js\\popper.js"
+    },
+    {
       "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\js\\toastr.js",
+      "PackagePath": "staticwebassets\\js\\toastr.js"
     },
     {
       "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\lib\\bootstrap\\LICENSE",

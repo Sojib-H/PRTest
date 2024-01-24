@@ -21,8 +21,4 @@
     <ProjectReference Include="..\PRTest.Repository\PRTest.Repository.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

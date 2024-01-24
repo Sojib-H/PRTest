@@ -69,5 +69,18 @@ namespace PRTest.Repository.UnitOfWork
 				return tblUserInfo;
 			}
 		}
+
+		private IRepository<OTPInfo> tblOTPInfo;
+		public IRepository<OTPInfo> TblOTPInfo
+		{
+			get
+			{
+				if (this.tblOTPInfo == null)
+				{
+					this.tblOTPInfo = new GenericRepository<OTPInfo>(_context);
+				}
+				return tblOTPInfo;
+			}
+		}
 	}
 }

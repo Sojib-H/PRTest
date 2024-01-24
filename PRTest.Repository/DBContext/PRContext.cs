@@ -16,6 +16,7 @@ namespace PRTest.Repository.DBContext
 		public DbSet<RolePermission> RolePermission { get; set; }
 		public DbSet<UserInfo> UserInfo { get; set; }
 		public DbSet<UserType> UserType { get; set; }
+		public DbSet<OTPInfo> OTPInfo { get; set; }
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 		}
