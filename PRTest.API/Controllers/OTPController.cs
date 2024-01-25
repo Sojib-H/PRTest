@@ -60,7 +60,7 @@ namespace PRTest.API.Controllers
 					}
 
 					MailBodyPath = Path.Combine(_IHostingEnvironment.ContentRootPath, "MailTemplate/MailBody.html");
-					//var mailReturn = MailObj.SendEmail(email, MailBodyPath, OTPData.OTP);
+					var mailReturn = MailObj.SendEmail(email, MailBodyPath, OTPData.OTP);
 
 					DbRollback.Complete();
 					return "Success";

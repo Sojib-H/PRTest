@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\PRTest.csproj": {}
+    "F:\\.Net Core\\PRTest\\PRTest\\PRTest.csproj": {}
   },
   "projects": {
-    "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\PRTest.csproj": {
+    "F:\\.Net Core\\PRTest\\PRTest\\PRTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\PRTest.csproj",
+        "projectUniqueName": "F:\\.Net Core\\PRTest\\PRTest\\PRTest.csproj",
         "projectName": "PRTest",
-        "projectPath": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\PRTest.csproj",
-        "packagesPath": "C:\\Users\\sahad\\.nuget\\packages\\",
-        "outputPath": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\obj\\",
+        "projectPath": "F:\\.Net Core\\PRTest\\PRTest\\PRTest.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "F:\\.Net Core\\PRTest\\PRTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sahad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

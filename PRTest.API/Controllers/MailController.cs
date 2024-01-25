@@ -9,9 +9,9 @@ namespace PRTest.API.Controllers
 	[ApiController]
 	public class MailController : BaseController
 	{
-		string Email = "sojibhossain@deshisysltd.com";
-		string Password = "dsl@123!";
-		string Host = "host22.registrar-servers.com";
+		string Email = "shayoneditor@gmail.com";
+		string Password = "Shayon12345*";
+		string Host = "smtp.gmail.com";
 		public MailController()
 		{
 
@@ -34,6 +34,8 @@ namespace PRTest.API.Controllers
 					MailAddress fromAddress = new MailAddress(Email, "Email Validation");
 
 					smtpClient.Host = Host;
+					smtpClient.Port = 587;
+					smtpClient.EnableSsl = true;
 					smtpClient.UseDefaultCredentials = false;
 					smtpClient.Credentials = basicCredential;
 
@@ -43,7 +45,7 @@ namespace PRTest.API.Controllers
 					message.Body = MailText;
 					message.To.Add(ReceiverMail);
 
-					try
+                    try
 					{
 						await smtpClient.SendMailAsync(message);
 						//smtpClient.Send(message);
