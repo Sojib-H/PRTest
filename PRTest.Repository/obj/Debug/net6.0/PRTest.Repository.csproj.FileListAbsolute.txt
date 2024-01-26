@@ -1,17 +1,3 @@
-E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\bin\Debug\net6.0\PRTest.Repository.deps.json
-E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\bin\Debug\net6.0\PRTest.Repository.runtimeconfig.json
-E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\bin\Debug\net6.0\PRTest.Repository.dll
-E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\bin\Debug\net6.0\PRTest.Repository.pdb
-E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.csproj.AssemblyReference.cache
-E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.GeneratedMSBuildEditorConfig.editorconfig
-E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.AssemblyInfoInputs.cache
-E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.AssemblyInfo.cs
-E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.csproj.CoreCompileInputs.cache
-E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.dll
-E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\refint\PRTest.Repository.dll
-E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.pdb
-E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.genruntimeconfig.cache
-E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\ref\PRTest.Repository.dll
 F:\.Net Core\PRTest\PRTest.Repository\bin\Debug\net6.0\PRTest.Repository.deps.json
 F:\.Net Core\PRTest\PRTest.Repository\bin\Debug\net6.0\PRTest.Repository.runtimeconfig.json
 F:\.Net Core\PRTest\PRTest.Repository\bin\Debug\net6.0\PRTest.Repository.dll
@@ -26,3 +12,17 @@ F:\.Net Core\PRTest\PRTest.Repository\obj\Debug\net6.0\refint\PRTest.Repository.
 F:\.Net Core\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.pdb
 F:\.Net Core\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.genruntimeconfig.cache
 F:\.Net Core\PRTest\PRTest.Repository\obj\Debug\net6.0\ref\PRTest.Repository.dll
+E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\bin\Debug\net6.0\PRTest.Repository.deps.json
+E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\bin\Debug\net6.0\PRTest.Repository.runtimeconfig.json
+E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\bin\Debug\net6.0\PRTest.Repository.dll
+E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\bin\Debug\net6.0\PRTest.Repository.pdb
+E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.csproj.AssemblyReference.cache
+E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.GeneratedMSBuildEditorConfig.editorconfig
+E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.AssemblyInfoInputs.cache
+E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.AssemblyInfo.cs
+E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.csproj.CoreCompileInputs.cache
+E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.dll
+E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\refint\PRTest.Repository.dll
+E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.pdb
+E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\PRTest.Repository.genruntimeconfig.cache
+E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest.Repository\obj\Debug\net6.0\ref\PRTest.Repository.dll

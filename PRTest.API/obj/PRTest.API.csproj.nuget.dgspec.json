@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\.Net Core\\PRTest\\PRTest.API\\PRTest.API.csproj": {}
+    "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest.API\\PRTest.API.csproj": {}
   },
   "projects": {
-    "F:\\.Net Core\\PRTest\\PRTest.API\\PRTest.API.csproj": {
+    "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest.API\\PRTest.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\.Net Core\\PRTest\\PRTest.API\\PRTest.API.csproj",
+        "projectUniqueName": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest.API\\PRTest.API.csproj",
         "projectName": "PRTest.API",
-        "projectPath": "F:\\.Net Core\\PRTest\\PRTest.API\\PRTest.API.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "F:\\.Net Core\\PRTest\\PRTest.API\\obj\\",
+        "projectPath": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest.API\\PRTest.API.csproj",
+        "packagesPath": "C:\\Users\\sahad\\.nuget\\packages\\",
+        "outputPath": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sahad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\.Net Core\\PRTest\\PRTest.Repository\\PRTest.Repository.csproj": {
-                "projectPath": "F:\\.Net Core\\PRTest\\PRTest.Repository\\PRTest.Repository.csproj"
+              "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest.Repository\\PRTest.Repository.csproj": {
+                "projectPath": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest.Repository\\PRTest.Repository.csproj"
               }
             }
           }
@@ -96,21 +97,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\.Net Core\\PRTest\\PRTest.Repository\\PRTest.Repository.csproj": {
+    "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest.Repository\\PRTest.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\.Net Core\\PRTest\\PRTest.Repository\\PRTest.Repository.csproj",
+        "projectUniqueName": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest.Repository\\PRTest.Repository.csproj",
         "projectName": "PRTest.Repository",
-        "projectPath": "F:\\.Net Core\\PRTest\\PRTest.Repository\\PRTest.Repository.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "F:\\.Net Core\\PRTest\\PRTest.Repository\\obj\\",
+        "projectPath": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest.Repository\\PRTest.Repository.csproj",
+        "packagesPath": "C:\\Users\\sahad\\.nuget\\packages\\",
+        "outputPath": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sahad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -153,6 +154,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -171,7 +176,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

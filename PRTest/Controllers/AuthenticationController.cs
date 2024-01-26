@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CRUD.Repository.Models.Entity;
+using Microsoft.AspNetCore.Mvc;
+using PRTest.Repository.ApiGateway;
 
 namespace PRTest.Controllers
 {
@@ -12,6 +14,20 @@ namespace PRTest.Controllers
 		public IActionResult Registration()
 		{
 			return View();
+		}
+
+		[HttpPost]
+		public dynamic Login(UserInfo userInfo)
+		{
+			try
+			{
+				var ApiUrl = "http://localhost:5262/api/Authentication/Login";
+				return ApiCalling.Post<dynamic>(ApiUrl, userInfo);
+			}
+			catch (Exception)
+			{
+				throw;
+			}
 		}
 	}
 }

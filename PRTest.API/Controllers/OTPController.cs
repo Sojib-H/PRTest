@@ -59,17 +59,25 @@ namespace PRTest.API.Controllers
 						await Uow.TblOTPInfo.Update(OTPData);
 					}
 
-					MailBodyPath = Path.Combine(_IHostingEnvironment.ContentRootPath, "MailTemplate/MailBody.html");
-					var mailReturn = MailObj.SendEmail(email, MailBodyPath, OTPData.OTP);
+					//MailBodyPath = Path.Combine(_IHostingEnvironment.ContentRootPath, "MailTemplate/MailBody.html");
+					//var mailReturn = MailObj.SendEmail(email, MailBodyPath, OTPData.OTP);
 
 					DbRollback.Complete();
-					return "Success";
+					return new OTPParam()
+					{
+						OTP = OTPData.OTP,
+						ReturnMsg = "Success",
+					};
 				}
 
 				catch (Exception)
 				{
 					DbRollback.Dispose();
-					return "Error";
+					return new OTPParam()
+					{
+						OTP = 0,
+						ReturnMsg = "Error",
+					};
 				}
 			}
 		}

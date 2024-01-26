@@ -17,39 +17,40 @@
 							</div>
 							<div class="w-100">
 								<p class="social-media d-flex justify-content-end">
-									<a
-									   class="social-icon d-flex align-items-center justify-content-center">
+									<a class="social-icon d-flex align-items-center justify-content-center">
 										<span class="fa fa-facebook"></span>
 									</a>
-									<a
-									   class="social-icon d-flex align-items-center justify-content-center">
+									<a class="social-icon d-flex align-items-center justify-content-center">
 										<span class="fa fa-twitter"></span>
 									</a>
 								</p>
 							</div>
 						</div>
-						<form action="#" class="signin-form">
+						<div class="signin-form">
 							<div class="form-group mb-3">
 								<label class="label" for="name">Username</label>
 								<input type="text"
 									   class="form-control"
-									   placeholder="Username"
-									   required />
+									   placeholder="Username" name="Username"
+									   id="Username"
+									    />
 							</div>
 							<div class="form-group mb-3">
 								<label class="label" for="password">Password</label>
 								<input type="password"
 									   class="form-control"
-									   placeholder="Password"
-									   required />
+									   placeholder="Password" 
+									   name="Password"
+									   id="Password"
+									    />
 							</div>
 							<div class="form-group">
-								<button type="submit"
+								<button type="button" id="BtnSignIn"
 										class="form-control btn btn-primary rounded submit px-3">
 									Sign In
 								</button>
 							</div>
-						</form>
+						</div>
 						<p class="text-center">
 							Not a member? <a asp-action="Registration">Sign Up</a>
 						</p>

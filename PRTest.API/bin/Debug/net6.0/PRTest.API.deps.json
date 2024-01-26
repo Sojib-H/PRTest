@@ -2697,7 +2697,8 @@
         "dependencies": {
           "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore": "6.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0",
+          "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "PRTest.Repository.dll": {}

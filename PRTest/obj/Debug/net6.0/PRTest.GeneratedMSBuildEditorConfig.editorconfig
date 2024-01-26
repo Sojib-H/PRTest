@@ -9,53 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PRTest
 build_property.RootNamespace = PRTest
-build_property.ProjectDir = F:\.Net Core\PRTest\PRTest\
+build_property.ProjectDir = E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\.Net Core\PRTest\PRTest
+build_property.MSBuildProjectDirectory = E:\Sojib\Demo Projects\.Net Project\PRTest\PRTest
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/.Net Core/PRTest/PRTest/Views/Authentication/Index.cshtml]
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Authentication/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/.Net Core/PRTest/PRTest/Views/Authentication/Registration.cshtml]
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Authentication/Registration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cUmVnaXN0cmF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/.Net Core/PRTest/PRTest/Views/Home/Index.cshtml]
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/.Net Core/PRTest/PRTest/Views/Home/Privacy.cshtml]
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/.Net Core/PRTest/PRTest/Views/OTP/Index.cshtml]
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/OTP/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT1RQXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/.Net Core/PRTest/PRTest/Views/Shared/Error.cshtml]
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/.Net Core/PRTest/PRTest/Views/Shared/_Authentication.cshtml]
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Shared/_Authentication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRoZW50aWNhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/.Net Core/PRTest/PRTest/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/.Net Core/PRTest/PRTest/Views/_ViewImports.cshtml]
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/.Net Core/PRTest/PRTest/Views/_ViewStart.cshtml]
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/.Net Core/PRTest/PRTest/Views/Shared/_Layout.cshtml]
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-twavr26otx

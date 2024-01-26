@@ -10,7 +10,7 @@ namespace PRTest.API.Controllers
 	public class MailController : BaseController
 	{
 		string Email = "shayoneditor@gmail.com";
-		string Password = "*****";
+		string Password = "Shayon12345*";
 		string Host = "smtp.gmail.com";
 		public MailController()
 		{

@@ -15,7 +15,7 @@
 					<div class="login-wrap p-4 p-md-5">
 						<div class="d-flex">
 							<div class="w-100">
-								<h5 class="mb-4">OTP Varification</h5>
+								<h5 class="mb-4">Email Varification</h5>
 							</div>
 							<div class="w-100">
 								<p class="social-media d-flex justify-content-end">
@@ -28,21 +28,23 @@
 								</p>
 							</div>
 						</div>
-						<form action="#" class="signin-form">
+						<div class="signin-form" id="OTPForm">
 							<div class="form-group mb-3">
 								<input type="text"
 									   class="form-control"
-									   placeholder="OTP"
-									   required />
+									   placeholder="Enter OTP"
+									   name="Otp"
+									   id="Otp"
+									    />
 									   <span class="text-warning">Please check your email for OTP...</span>
 							</div>
 							<div class="form-group">
-								<button type="submit"
+								<button type="button" id="BtnOtpSubmit"
 										class="form-control btn btn-primary rounded submit px-3">
 									Submit
 								</button>
 							</div>
-						</form>
+						</div>
 					</div>
 				</div>
 			</div>
