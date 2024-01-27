@@ -1,6 +1,4 @@
 ﻿$(document).ready(function () {
-    var WebUrl = 'http://localhost:5262/';
-
     //sign up page script
     function validateEmail($email) {
         var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
@@ -38,22 +36,25 @@
             return false;
         } else { return true; }
     }
-
+    //sign up save 
     $('#BtnSignUp').click(function () {
         if (SignUpValidation() == true) {
-            localStorage.setItem('Username', $('#Username').val());
-            localStorage.setItem('Password', $('#Password').val());
-            localStorage.setItem('Email', $('#Email').val());
 
-            //Make Ajax request with the contentType = false, and procesDate = false
-            var ajaxRequest = $.ajax({
-                type: "Get",
-                url: WebUrl + "api/OTP/GenerateOTP/" + $('#Email').val(),
-                contentType: 'json',
+            var SignUpData = {
+                Username: $('#Username').val(),
+                Password: $('#Password').val(),
+                Email: $('#Email').val()
+            }
+
+            $.ajax({
+                url: "/Authentication/SignUp",
+                method: "POST",
+                data: SignUpData,
                 success: function (data, textStatus, xhr) {
-                    if (data.ReturnMsg == "Success") {
-                        localStorage.setItem('OTP', data.OTP);
-                        window.location.href = 'http://localhost:5148/Otp'
+                    if (data == "Success") {
+                        window.location.href = 'http://localhost:5148/'
+                    } else if (data == "Duplicate") {
+                        alert("This email or username already in use");
                     }
                     else {
                         alert("Error");
@@ -63,48 +64,6 @@
                     alert('Error in Operation');
                 }
             });
-        }
-    });
-
-    //otp page script
-    $('#BtnOtpSubmit').click(function () {
-        $('.form-control').css('border-color', '');
-        $('.validation').hide();
-        if ($('#Otp').val() == '' || $('#Otp').val() == undefined) {
-            $("#Otp")
-                .after("<p class='text-danger validation'>Otp required</p>");
-            $('#Otp').css('border-color', 'red');
-            $('#Otp').focus();
-            return;
-        } else {
-            if (localStorage.getItem('OTP') == $('#Otp').val()) {
-                var data = {
-                    Username: localStorage.getItem('Username'),
-                    Password: localStorage.getItem('Password'),
-                    Email: localStorage.getItem('Email')
-                }
-                $.ajax({
-                    url: "/MVCMain/CreateUser",
-                    method: "POST",
-                    data: data,
-                    success: function (data, textStatus, xhr) {
-                        if (data == "Success") {
-                            window.location.href = 'http://localhost:5148';
-                            localStorage.clear();
-                        } else if (data == "Duplicate") {
-                            alert("This email is already in use");
-                        }
-                        else {
-                            alert("Error");
-                        }
-                    },
-                    error: function (xhr, textStatus, errorThrown) {
-                        alert('Error in Operation');
-                    }
-                });
-            } else {
-                alert("Enter correct OTP");
-            }
         }
     });
 
@@ -136,17 +95,16 @@
                 Password: $('#Password').val(),
             }
 
-            //console.log(SignInData);
-            //return;
-
             $.ajax({
                 url: "/Authentication/Login",
                 method: "POST",
                 data: SignInData,
                 success: function (data, textStatus, xhr) {
-                    if (data == "Success") {
-                        alert(1)
-                    } else if (data == "Invalid") {
+                    //console.log(data);
+                    if (data.returnMsg == "Success") {
+                        window.location.href = 'http://localhost:5148/otp';
+                        localStorage.setItem("Email", data.email);
+                    } else if (data.returnMsg == "Invalid") {
                         alert("Invalid username or password");
                     }
                     else {
@@ -160,4 +118,54 @@
         }
     });
 
+    //otp page script
+    $('#BtnOtpSubmit').click(function () {
+        $('.form-control').css('border-color', '');
+        $('.validation').hide();
+        if ($('#Otp').val() == '' || $('#Otp').val() == undefined) {
+            $("#Otp")
+                .after("<p class='text-danger validation'>Otp required</p>");
+            $('#Otp').css('border-color', 'red');
+            $('#Otp').focus();
+            return;
+        } else {
+            var OTPData = {
+                OTP: $('#Otp').val(),
+                Email: localStorage.getItem("Email"),
+            }
+            $.ajax({
+                url: "/Authentication/CheckOTP",
+                method: "POST",
+                data: OTPData,
+                success: function (data, textStatus, xhr) {
+                    console.log(data);
+                    if (data.returnMsg == "Success") {
+                        localStorage.clear();
+                        localStorage.setItem("UserID", data.otp);
+                        window.location.href = 'http://localhost:5148/home';
+                    } else if (data.returnMsg == "Invalid") {
+                        alert("Incorrect OTP");
+                    }
+                    else {
+                        alert("Error");
+                    }
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    alert('Error in Operation');
+                }
+            });
+        }
+    });
+
+    $('#BtnGoBack').click(function () {
+        localStorage.clear();
+        window.location.href = 'http://localhost:5148/';
+    });
+
+    $("#Otp").keypress(function (e) {
+        // 46 is a period
+        if (e.which != 46 && e.which != 8 && (e.which < 48 || e.which > 57)) {
+            return (false);
+        }
+    });
 });

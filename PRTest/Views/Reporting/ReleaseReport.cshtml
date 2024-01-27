@@ -1,0 +1,48 @@
+﻿@{
+	PRTest.Repository.Models.EmployeeInfo employeeInfo = ViewBag.Query;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Release Letter</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<link href="~/css/default.css" rel="stylesheet" />
+</head>
+<body class="container" id="bodyTag">
+	<button class="btn btn-primary" onclick="printReleaseCertificate()" style="margin: 20px 0px 0px 10px">PRINT</button>
+	<div id="ReleaseCertificate">
+		<p>
+			X Company <br />
+			Dhaka<br />
+			1 January, 2024
+		</p>
+		<p class="text-center"> <strong>Release Letter</strong> </p>
+		<p class="text-justify">
+			Dear @employeeInfo.EmpName, <br />
+			With reference to your resignation email dated, you are hereby relieved from your duties as on your position. We confirm you have been working with us within 1.5 year. <br />
+			We would like to thank you for your service with us & wish you the best in your future endeavours.
+		</p>
+		<p>
+			HR <br />
+			X Company
+		</p>
+	</div>
+	<script type="text/javascript">
+		function printReleaseCertificate() {
+			document.getElementById('bodyTag').classList.remove("container");
+			var printContents = document.getElementById('ReleaseCertificate').innerHTML;
+			var originalContents = document.body.innerHTML;
+			document.body.innerHTML = printContents;
+			window.print();
+			window.location.reload();
+		}
+	</script>
+</body>
+</html>
+
+
+

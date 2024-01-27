@@ -17,12 +17,41 @@ namespace PRTest.Controllers
 		}
 
 		[HttpPost]
+		public dynamic SignUp(UserInfo userInfo)
+		{
+			try
+			{
+				var ApiUrl = "http://localhost:5262/api/Authentication/SignUp";
+				return ApiCalling.Post<dynamic>(ApiUrl, userInfo);
+			}
+			catch (Exception)
+			{
+				throw;
+			}
+		}
+
+		[HttpPost]
 		public dynamic Login(UserInfo userInfo)
 		{
 			try
 			{
 				var ApiUrl = "http://localhost:5262/api/Authentication/Login";
-				return ApiCalling.Post<dynamic>(ApiUrl, userInfo);
+				return ApiCalling.Post<OTPParam>(ApiUrl, userInfo);
+			}
+			catch (Exception)
+			{
+				throw;
+			}
+		}
+
+		[HttpPost]
+		public dynamic CheckOTP(OTPInfo OtpInfo)
+		{
+			try
+			{
+				var ApiUrl = "http://localhost:5262/api/Authentication/CheckOTP";
+				var abc = ApiCalling.Post<OTPParam>(ApiUrl, OtpInfo);
+				return abc;
 			}
 			catch (Exception)
 			{

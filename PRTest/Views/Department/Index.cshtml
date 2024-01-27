@@ -1,0 +1,50 @@
+﻿@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section scripts{
+	<script src="~/js/Department/Department.js"></script>
+}
+<div class="Department">
+	<form>
+		<div class="mb-3">
+			<label for="exampleInputEmail1" class="form-label">Email address</label>
+			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+			<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+		</div>
+		<div class="mb-3">
+			<label for="exampleInputPassword1" class="form-label">Password</label>
+			<input type="password" class="form-control" id="exampleInputPassword1">
+		</div>
+		<div class="mb-3 form-check">
+			<input type="checkbox" class="form-check-input" id="exampleCheck1">
+			<label class="form-check-label" for="exampleCheck1">Check me out</label>
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+
+	<div class="table-responsive mt-3">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th scope="col">SL</th>
+					<th scope="col">Department Name</th>
+					<th scope="col">Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>CSE</td>
+					<td>Otto</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>EEE</td>
+					<td>Otto</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+

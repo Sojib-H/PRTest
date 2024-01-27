@@ -24,6 +24,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cUmVnaXN0cmF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Certificate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhdGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Department/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,6 +46,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/OTP/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT1RQXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Reporting/NOCReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0aW5nXE5PQ1JlcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Reporting/ReleaseReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0aW5nXFJlbGVhc2VSZXBvcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Sojib/Demo Projects/.Net Project/PRTest/PRTest/Views/Shared/Error.cshtml]

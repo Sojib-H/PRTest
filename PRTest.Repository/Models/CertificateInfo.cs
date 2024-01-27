@@ -11,6 +11,7 @@ namespace PRTest.Repository.Models
 	{
 		[Key]
 		public int CertificateID { get; set; }
-		public DateTime Date { get; set; }
+		public string CertificateType { get; set; }
+		public DateTime CreateDate { get; set; }
 	}
 }

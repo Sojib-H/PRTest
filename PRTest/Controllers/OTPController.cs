@@ -2,7 +2,7 @@
 
 namespace PRTest.Controllers
 {
-	public class OTPController : Controller
+	public class OtpController : Controller
 	{
 		public IActionResult Index()
 		{

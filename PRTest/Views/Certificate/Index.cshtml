@@ -1,0 +1,29 @@
+﻿@{
+	ViewData["Title"] = "Certificate";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section scripts{
+	<script src="~/js/Certificate/Certificate.js"></script>
+}
+<div class="Certificate">
+	<h3>Generate Certificate</h3>
+	<div class="CertificateForm mt-3">
+		<div class="mb-3">
+			<label for="exampleInputEmail1" class="form-label">Department</label>
+			<select class="form-select" aria-label="Default select example" id="ddlDepartment">
+			</select>
+		</div>
+		<div class="mb-3">
+			<label for="exampleInputPassword1" class="form-label">Employee</label>
+			<select class="form-select" aria-label="Default select example" id="ddlEmployee">
+			</select>
+		</div>
+		<div class="mb-3">
+			<label for="exampleInputPassword1" class="form-label">Certificate</label>
+			<select class="form-select" aria-label="Default select example" id="ddlCertificate">
+			</select>
+		</div>
+		<button type="button" class="btn btn-primary" id="BtnGenCertificate">Generate</button>
+	</div>
+</div>
+

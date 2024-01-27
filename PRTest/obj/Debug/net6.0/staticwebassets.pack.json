@@ -45,6 +45,22 @@
       "PackagePath": "staticwebassets\\js\\Authentication\\Authentication.js"
     },
     {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\js\\Certificate\\Certificate.js",
+      "PackagePath": "staticwebassets\\js\\Certificate\\Certificate.js"
+    },
+    {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\js\\Dashboard\\Dashboard.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Dashboard.js"
+    },
+    {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\js\\Department\\Department.js",
+      "PackagePath": "staticwebassets\\js\\Department\\Department.js"
+    },
+    {
+      "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\js\\Employee\\Employee.js",
+      "PackagePath": "staticwebassets\\js\\Employee\\Employee.js"
+    },
+    {
       "Id": "E:\\Sojib\\Demo Projects\\.Net Project\\PRTest\\PRTest\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },

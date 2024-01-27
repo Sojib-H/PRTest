@@ -1,0 +1,46 @@
+﻿@{
+	PRTest.Repository.Models.EmployeeInfo employeeInfo = ViewBag.Query;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>NOC Letter</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<link href="~/css/default.css" rel="stylesheet" />
+</head>
+<body class="container" id="bodyTag">
+	<button class="btn btn-primary" onclick="printNOCCertificate()" style="margin: 20px 0px 0px 10px">PRINT</button>
+	<div id="NOCCertificate">
+		<h3 class="text-center">NOC Letter for Leaving Job</h3>
+		<p>1 January, 2024</p>
+		<p class="text-center"> <strong>To Whom It May Concern</strong> </p>
+		<p class="text-justify">
+			This certificate is to clain No Objection (NOC) for @employeeInfo.EmpName if he joins and provides his services to any other organization. It is to inform you that he has cleared all his balances and received his security from X company.<br />
+			We wish him good luck in the future.
+		</p>
+		<p>
+			Sincerely,<br />
+			Manager Director,<br />
+			X company<br />
+			Dhaka
+		</p>
+	</div>
+	<script type="text/javascript">
+		function printNOCCertificate() {
+			document.getElementById('bodyTag').classList.remove("container");
+			var printContents = document.getElementById('NOCCertificate').innerHTML;
+			var originalContents = document.body.innerHTML;
+			document.body.innerHTML = printContents;
+			window.print();
+			window.location.reload();
+		}
+	</script>
+</body>
+</html>
+
+
+

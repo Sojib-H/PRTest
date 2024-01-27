@@ -13,13 +13,10 @@ namespace PRTest.Repository.Models
 		public int EmpID { get; set; }
 		public string EmpName { get; set; }
 		public int DepartmentID { get; set; }
-		public string Address { get; set; }
 		public string Mobile { get; set; }
 		public string Email { get; set; }
-		public string Remarks { get; set; }
 		public int CreateBy { get; set; }
 		public DateTime CreateDate { get; set; }
-		public int ModifyBy { get; set; }
 		public DateTime ModifyDate { get; set; }
 	}
 }

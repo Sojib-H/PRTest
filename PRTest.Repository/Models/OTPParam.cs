@@ -8,5 +8,6 @@ namespace CRUD.Repository.Models.Entity
         [Key]
         public int OTP { get; set; }
         public string ReturnMsg { get; set; }
+        public string Email { get; set; }
     }
 }
