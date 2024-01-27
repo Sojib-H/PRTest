@@ -4,7 +4,7 @@
         window.location.href = 'http://localhost:5148/';
     }
 
-    getDepartment();
+    //getDepartment();
     getEmployee();
     getCertificate();
 

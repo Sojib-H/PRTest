@@ -18,8 +18,21 @@ namespace PRTest.Controllers
             try
             {
                 var ApiUrl = "http://localhost:5262/api/Employee/GetEmployee";
-                var abc = ApiCalling.PostAll<EmployeeInfo>(ApiUrl, employeeInfo);
-                return abc;
+                return ApiCalling.PostAll<EmployeeInfo>(ApiUrl, employeeInfo);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        [HttpPost]
+        public dynamic AddEmployee(EmployeeInfo employeeInfo)
+        {
+            try
+            {
+                var ApiUrl = "http://localhost:5262/api/Employee/AddEmployee";
+                return ApiCalling.Post<dynamic>(ApiUrl, employeeInfo);
             }
             catch (Exception)
             {

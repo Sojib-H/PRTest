@@ -1,10 +1,39 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Employee";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section scripts{
     <script src="~/js/Employee/Employee.js"></script>
 }
-<h1>Index</h1>
+<div class="Employee">
+    <h3>Employee Info</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label for="EmpName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="EmpName" name="EmpName" placeholder="Enter name">
+            </div>
+            <div class="mb-3">
+                <label for="Mobile" class="form-label">Mobile</label>
+                <input type="text" class="form-control" id="Mobile" name="Mobile" placeholder="Enter mobile no">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="Email" name="Email" placeholder="Enter email">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Department</label>
+                <select class="form-select" aria-label="Default select example" id="ddlDepartment">
+                </select>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <button type="button" class="btn btn-primary" id="AddEmployee">Add Employee</button>
+        </div>
+        
+    </div>
+</div>
 
