@@ -3,27 +3,66 @@
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section scripts{
-	<script src="~/js/Certificate/Certificate.js"></script>
+	<script src="~/js/Certificate/CreateCertificate.js"></script>
 }
 <div class="Certificate">
 	<h3>Generate Certificate</h3>
-	<div class="CertificateForm mt-3">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="mb-3">
+				<label for="EmpName" class="form-label">Name</label>
+				<input type="text" class="form-control" id="EmpName" name="EmpName" placeholder="Enter name">
+			</div>
+			<div class="mb-3">
+				<label for="Mobile" class="form-label">Mobile</label>
+				<input type="text" class="form-control" id="Mobile" name="Mobile" placeholder="Enter mobile no">
+			</div>
+			<div class="mb-3">
+				<label for="exampleInputPassword1" class="form-label">Certificate</label>
+				<select class="form-select" aria-label="Default select example" id="ddlCertificate">
+				</select>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="mb-3">
+				<label for="Email" class="form-label">Email</label>
+				<input type="text" class="form-control" id="Email" name="Email" placeholder="Enter email">
+			</div>
+			<div class="mb-3">
+				<label for="" class="form-label">Department</label>
+				<select class="form-select" aria-label="Default select example" id="ddlDepartment">
+				</select>
+			</div>
+		</div>
+	</div>
+	<button type="button" class="btn btn-primary" id="BtnGenCertificate">Generate</button>
+	<div class="col-md-12 mt-3">
+		<table class="table table-bordered" id="table">
+			<thead>
+				<tr class="text-center">
+					<th scope="col">Name</th>
+					<th scope="col">Email</th>
+					<th scope="col">Mobile</th>
+					<th scope="col">Action</th>
+				</tr>
+			</thead>
+			<tbody id="EmployeeTableBody">
+			</tbody>
+		</table>
+	</div>
+	<div class="col-md-6">
 		@*<div class="mb-3">
 			<label for="exampleInputEmail1" class="form-label">Department</label>
 			<select class="form-select" aria-label="Default select example" id="ddlDepartment">
 			</select>
 		</div>*@
-		<div class="mb-3">
+		@*<div class="mb-3">
 			<label for="exampleInputPassword1" class="form-label">Employee</label>
 			<select class="form-select" aria-label="Default select example" id="ddlEmployee">
 			</select>
-		</div>
-		<div class="mb-3">
-			<label for="exampleInputPassword1" class="form-label">Certificate</label>
-			<select class="form-select" aria-label="Default select example" id="ddlCertificate">
-			</select>
-		</div>
-		<button type="button" class="btn btn-primary" id="BtnGenCertificate">Generate</button>
+		</div>*@
+		
+		
 	</div>
 </div>
 

@@ -32,7 +32,7 @@ namespace PRTest.Controllers
             try
             {
                 var ApiUrl = "http://localhost:5262/api/Employee/AddEmployee";
-                return ApiCalling.Post<dynamic>(ApiUrl, employeeInfo);
+                return ApiCalling.Post<ReturnParam>(ApiUrl, employeeInfo);
             }
             catch (Exception)
             {

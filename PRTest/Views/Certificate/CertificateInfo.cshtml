@@ -1,0 +1,27 @@
+﻿@{
+	ViewData["Title"] = "CertificateInfo";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section scripts{
+	<script src="~/js/Certificate/CertificateInfo.js"></script>
+}
+<div class="Certificate">
+	<h3>Certificate Info</h3>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="mb-3">
+				<label for="exampleInputPassword1" class="form-label">Employee</label>
+				<select class="form-select" aria-label="Default select example" id="ddlEmployee">
+				</select>
+			</div>
+			<div class="mb-3">
+				<label for="exampleInputPassword1" class="form-label">Certificate</label>
+				<input type="file" class="form-control" id="FileUpload" name="FileUpload">
+				<input type="hidden" id="uploadImageValue" name="uploadImageValue" value="" />
+			</div>
+			<button type="submit" class="btn btn-primary" id="BtnCertificateInfo">Submit</button>
+		</div>
+	</div>
+
+</div>
+

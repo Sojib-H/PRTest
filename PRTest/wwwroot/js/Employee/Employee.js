@@ -10,7 +10,6 @@
             url: "/Department/GetAllDepartment",
             method: "GET",
             success: function (data, textStatus, xhr) {
-                //console.log(data);
                 var optionhtml1 = '';
                 var optionhtml1 = '<option value="' +
                     0 + '">' + "--Select--" + '</option>';
@@ -36,7 +35,7 @@
             method: "POST",
             data: EmployeeData,
             success: function (data, textStatus, xhr) {
-                console.log(data);
+                //console.log(data);
             },
             error: function (xhr, textStatus, errorThrown) {
                 alert('Error in Operation');
@@ -100,14 +99,11 @@
                 DepartmentID: $('#ddlDepartment').val(),
                 CreateBy: UserID,
             }
-            //console.log(EmployeeData);
-            //return;
             $.ajax({
                 url: "/Employee/AddEmployee",
                 method: "POST",
                 data: EmployeeData,
                 success: function (data, textStatus, xhr) {
-                    //console.log(data);
                     if (data == "Success") {
                         alert("Successfully data stored")
                     } else if (data == "Duplicate") {

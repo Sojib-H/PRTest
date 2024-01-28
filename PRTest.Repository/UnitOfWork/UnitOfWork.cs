@@ -82,5 +82,18 @@ namespace PRTest.Repository.UnitOfWork
 				return tblOTPInfo;
 			}
 		}
+
+		private IRepository<EmployeeCertificateInfo> tblEmployeeCertificateInfo;
+		public IRepository<EmployeeCertificateInfo> TblEmployeeCertificateInfo
+		{
+			get
+			{
+				if (this.tblEmployeeCertificateInfo == null)
+				{
+					this.tblEmployeeCertificateInfo = new GenericRepository<EmployeeCertificateInfo>(_context);
+				}
+				return tblEmployeeCertificateInfo;
+			}
+		}
 	}
 }

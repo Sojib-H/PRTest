@@ -11,6 +11,7 @@ namespace PRTest.Repository.UnitOfWork
 		IRepository<EmployeeInfo> TblEmployeeInfo { get; }
 		IRepository<UserInfo> TblUserInfo { get; }
 		IRepository<OTPInfo> TblOTPInfo { get; }
+		IRepository<EmployeeCertificateInfo> TblEmployeeCertificateInfo { get; }
 		
 	}
 }

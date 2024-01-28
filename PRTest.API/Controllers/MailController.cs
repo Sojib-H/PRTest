@@ -27,7 +27,6 @@ namespace PRTest.API.Controllers
 				StreamReader str = new StreamReader(FilePath);
 				string MailText = str.ReadToEnd();
 				MailText = MailText.Replace("#OTP", OTP.ToString());
-				MailText = MailText.Replace("#ReceiverEmail", ReceiverMail);
 
 				using (MailMessage message = new MailMessage())
 				{

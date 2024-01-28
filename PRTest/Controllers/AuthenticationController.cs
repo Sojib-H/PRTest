@@ -36,7 +36,7 @@ namespace PRTest.Controllers
 			try
 			{
 				var ApiUrl = "http://localhost:5262/api/Authentication/Login";
-				return ApiCalling.Post<OTPParam>(ApiUrl, userInfo);
+				return ApiCalling.Post<ReturnParam>(ApiUrl, userInfo);
 			}
 			catch (Exception)
 			{
@@ -50,8 +50,7 @@ namespace PRTest.Controllers
 			try
 			{
 				var ApiUrl = "http://localhost:5262/api/Authentication/CheckOTP";
-				var abc = ApiCalling.Post<OTPParam>(ApiUrl, OtpInfo);
-				return abc;
+				return ApiCalling.Post<ReturnParam>(ApiUrl, OtpInfo);
 			}
 			catch (Exception)
 			{

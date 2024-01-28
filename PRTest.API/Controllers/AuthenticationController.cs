@@ -12,10 +12,15 @@ namespace PRTest.API.Controllers
 	[ApiController]
 	public class AuthenticationController : BaseController
 	{
+		[Obsolete]
+		private readonly Microsoft.AspNetCore.Hosting.IHostingEnvironment _IHostingEnvironment;
 		DateTime TodayTime = TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.Now, TimeZoneInfo.Local.Id, "Bangladesh Standard Time");
-		public AuthenticationController(IUnitOfWork uow)
+
+		[Obsolete]
+		public AuthenticationController(IUnitOfWork uow, Microsoft.AspNetCore.Hosting.IHostingEnvironment iHostingEnvironment)
 		{
 			Uow = uow;
+			_IHostingEnvironment = iHostingEnvironment;
 		}
 
 		[HttpPost("[action]")]
@@ -51,6 +56,7 @@ namespace PRTest.API.Controllers
 			}
 		}
 
+		[Obsolete]
 		[HttpPost("[action]")]
 		public async Task<dynamic> Login(UserInfo entity)
 		{
@@ -58,15 +64,17 @@ namespace PRTest.API.Controllers
 			{
 				try
 				{
+					MailController MailObj = new MailController();
+					var MailBodyPath = "";
 					var key = "kjkla7ksf343l34knlasefal34j5k145";
 					entity.Password = AesOperation.EncryptString(key, entity.Password);
 					Random generator = new Random();
 					var search = Uow.TblUserInfo.FirstOrDefault(x => x.Username == entity.Username && x.Password == entity.Password).Result;
 					if (search == null)
 					{
-						return new OTPParam()
+						return new ReturnParam()
 						{
-							OTP = 0,
+							ReturnCode = 0,
 							ReturnMsg = "Invalid",
 						};
 					}
@@ -89,14 +97,14 @@ namespace PRTest.API.Controllers
 							await Uow.TblOTPInfo.Update(OTPData);
 						}
 
-						//MailBodyPath = Path.Combine(_IHostingEnvironment.ContentRootPath, "MailTemplate/MailBody.html");
-						//var mailReturn = MailObj.SendEmail(email, MailBodyPath, OTPData.OTP);
+						MailBodyPath = Path.Combine(_IHostingEnvironment.ContentRootPath, "MailTemplate/MailBody.html");
+						var mailReturn = MailObj.SendEmail(OtpResult.Email, MailBodyPath, OTPData.OTP);
 
 						DbRollback.Complete();
 
-						return new OTPParam()
+						return new ReturnParam()
 						{
-							OTP = OTPData.OTP,
+							ReturnCode = OTPData.OTP,
 							ReturnMsg = "Success",
 							Email = search.Email
 						};
@@ -107,9 +115,9 @@ namespace PRTest.API.Controllers
 				catch (Exception)
 				{
 					DbRollback.Dispose();
-					return new OTPParam()
+					return new ReturnParam()
 					{
-						OTP = 0,
+						ReturnCode = 0,
 						ReturnMsg = "Error",
 					};
 				}
@@ -124,9 +132,9 @@ namespace PRTest.API.Controllers
 				var OtpSearch = Uow.TblOTPInfo.FirstOrDefault(x => x.Email == entity.Email && x.OTP == entity.OTP).Result;
 				if (OtpSearch == null)
 				{
-					return new OTPParam()
+					return new ReturnParam()
 					{
-						OTP = 0,
+						ReturnCode = 0,
 						ReturnMsg = "Invalid",
 					};
 				}
@@ -134,9 +142,9 @@ namespace PRTest.API.Controllers
 				{
 					var UserSearch = Uow.TblUserInfo.FirstOrDefault(x => x.Email == OtpSearch.Email).Result;
 
-					return new OTPParam()
+					return new ReturnParam()
 					{
-						OTP = UserSearch.UserID,
+						ReturnCode = UserSearch.UserID,
 						ReturnMsg = "Success",
 					};
 				}
@@ -145,9 +153,9 @@ namespace PRTest.API.Controllers
 
 			catch (Exception)
 			{
-				return new OTPParam()
+				return new ReturnParam()
 				{
-					OTP = 0,
+					ReturnCode = 0,
 					ReturnMsg = "Error",
 				};
 

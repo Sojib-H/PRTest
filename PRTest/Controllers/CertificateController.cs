@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CRUD.Repository.Models.Entity;
+using Microsoft.AspNetCore.Mvc;
 using PRTest.Repository.ApiGateway;
 using PRTest.Repository.Models;
 
@@ -11,7 +12,12 @@ namespace PRTest.Controllers
 			return View();
 		}
 
-        [HttpGet]
+		public IActionResult CertificateInfo()
+		{
+			return View();
+		}
+
+		[HttpGet]
         public dynamic GetAllCertificateType()
         {
             try
@@ -24,5 +30,19 @@ namespace PRTest.Controllers
                 throw;
             }
         }
-    }
+
+		[HttpPost]
+		public dynamic AddEmployeeCertificate(EmployeeCertificateInfo employeeCertificateInfo)
+		{
+			try
+			{
+				var ApiUrl = "http://localhost:5262/api/Certificate/AddEmployeeCertificate";
+				return ApiCalling.Post<dynamic>(ApiUrl, employeeCertificateInfo);
+			}
+			catch (Exception)
+			{
+				throw;
+			}
+		}
+	}
 }

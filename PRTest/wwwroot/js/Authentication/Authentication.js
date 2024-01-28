@@ -100,7 +100,6 @@
                 method: "POST",
                 data: SignInData,
                 success: function (data, textStatus, xhr) {
-                    //console.log(data);
                     if (data.returnMsg == "Success") {
                         window.location.href = 'http://localhost:5148/otp';
                         localStorage.setItem("Email", data.email);
@@ -138,11 +137,10 @@
                 method: "POST",
                 data: OTPData,
                 success: function (data, textStatus, xhr) {
-                    console.log(data);
                     if (data.returnMsg == "Success") {
                         localStorage.clear();
-                        localStorage.setItem("UserID", data.otp);
-                        window.location.href = 'http://localhost:5148/home';
+                        localStorage.setItem("UserID", data.returnCode);
+                        window.location.href = 'http://localhost:5148/Certificate';
                     } else if (data.returnMsg == "Invalid") {
                         alert("Incorrect OTP");
                     }
